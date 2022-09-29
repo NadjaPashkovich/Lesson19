@@ -25,17 +25,14 @@ public class StudentManagerTest {
         double expected = -1;
         double actual = StudentManager.calcAvgStudentMark(marks);
 
-
         assertEquals(expected, actual, 0);
 
     }
 
     @Test
     public void calcAvgStudentMarkWithNull() {
-        int[] marks = null;
         double expected = -1;
         double actual = StudentManager.calcAvgStudentMark(null);
-
 
         assertEquals(expected, actual, 0);
     }
